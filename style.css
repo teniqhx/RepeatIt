@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* Для мобільних телефонів */
+@media only screen and (max-width: 600px) {
+    header{
+        display: flex;
+        align-items: center;
+
+        height: 75px;
+        border-bottom: 2px solid #e7edf3;
+        padding-top: 10px;
+
+        font-family: 'Afacad Flux', sans-serif;
+        font-size: 14px;
+    }
+
+    .headContent{
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        margin-inline-start: 16px;
+        margin-inline-end: 16px;
+
+        text-align: center;
+    }
+
+    #settingButton{
+        height: 35px;
+        width: 35px;
+    }
+
+    header h1{
+        flex: 1;
+        text-align: center;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        flex: 1; /* Змушує main займати весь простір між header і footer */
+        padding: 20px;
+        background-color: #F7FAFC;
+    }
+    
+    footer{
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        border-top: 2px solid #e7edf3;
+        background-color: #F7FAFC;
+        padding-bottom: 10px;
+    }
+    /*#e1e4e7*/
+    nav{
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        margin-inline-start: 16px;
+        margin-inline-end: 16px;
+        gap: 8px;
+    }
+
+    nav a{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        height: 65px;
+        width: 60px;
+        border-radius: 50% 50% 0 0;
+
+        text-decoration: none;
+        font-family: 'Afacad Flux', sans-serif;
+        font-size: 14px;
+
+        cursor: pointer;
+
+        transition: transform 0.3s ease;
+    }
+
+    nav a.active{
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+
+    nav svg{
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s ease;
+    }
+
+    nav svg.active{
+        transform: scale(1.1);
+    }
+
+}
