@@ -93,9 +93,13 @@ html, body {
         cursor: pointer;
 
         transition: transform 0.3s ease;
+
     }
 
     nav a.active{
+        background-color: transparent;
+        outline: none;
+        
         font-weight: bold;
         transform: scale(1.1);
     }
