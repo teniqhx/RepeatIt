@@ -57,12 +57,17 @@ html, body {
     }
     
     footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
         display: flex;
         justify-content: center;
         height: 75px;
         border-top: 2px solid #e7edf3;
         background-color: #F7FAFC;
-        padding-bottom: 10px;
+
+        padding-bottom: env(safe-area-inset-bottom);
     }
     /*#e1e4e7*/
     nav{
@@ -99,7 +104,7 @@ html, body {
     nav a.active{
         background-color: transparent;
         outline: none;
-        
+
         font-weight: bold;
         transform: scale(1.1);
     }
