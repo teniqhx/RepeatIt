@@ -98,6 +98,7 @@ html, body {
 
         transition: transform 0.3s ease;
 
+        -webkit-tap-highlight-color: transparent;
     }
 
     nav a.active{
@@ -105,10 +106,6 @@ html, body {
 
         font-weight: bold;
         transform: scale(1.1);
-    }
-
-    nav a:focus, nav a:active, nav a:hover{
-        outline: none;
     }
     
     nav svg{
